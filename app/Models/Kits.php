@@ -33,6 +33,11 @@ class Kits extends Model
         return $this->belongsTo(WorkCenter::class);
     }
 
+    public function country(): BelongsTo
+    {
+        return $this->belongsTo(Country::class);
+    }
+
     public function user(): BelongsTo
     {
         return $this->belongsTo(User::class);
